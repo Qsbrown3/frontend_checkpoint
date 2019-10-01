@@ -1,0 +1,65 @@
+body {
+  text-decoration: none;
+  list-style: none;
+  font-family: sf pro, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+
+.container {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+}
+.map {
+  background-image: url("../image/map.png");
+  background-size: cover;
+}
+.menu {
+  width: 375px;
+  height: 667px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.item {
+  border: 1px solid;
+  overflow: hidden;
+}
+
+.line {
+  display: block;
+  padding: 16px 20px;
+  background: gray;
+  color: 000000;
+}
+
+
+.line i {
+  margin-right: 10px;
+}
+
+.submenu {
+  background: #ffffff;
+  overflow: hidden;
+  display: block;
+}
+
+.submenu h1 {
+  float: left;
+  padding: 16px 26px;
+  color: ffffff;
+  font-size: 14px;
+  margin: 4px 0;
+  position: relative;
+}
+
+
+
+.submenu  h2 {
+  padding: 5px 5px;
+  background: ffffff;
+}
