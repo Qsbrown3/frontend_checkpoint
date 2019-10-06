@@ -1,65 +1,265 @@
-body {
-  text-decoration: none;
-  list-style: none;
-  font-family: sf pro, sans-serif;
-  margin: 0;
-  padding: 0;
+
+
+*:before, *:after {
+  box-sizing: border-box;
 }
 
+body {
+  background-color: #dadada;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 1.6em;
+  font-family: SF Pro Text;
+  margin: 0;
+  overflow: scroll;
+}
 
 .container {
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  width: 60%;
+
+  margin: auto;
+  background: #fff;
+}
+
+a:hover {
+  color: gray;
+}
+
+.clr {
+  clear: both;
+}
+
+.status_bar {
+  background-color: ;
+  margin-bottom: 0.5px solid #cdced2;
+  height: 20px;
+}
+
+.status_bar ul {
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+
+.status_bar li {
+  display: inline;
+  padding-left: ;
 
 }
+
+span {
+  text-align: center;
+}
+span.GS {
+
+}
+
+.nav {
+  width: 330px
+  height: 40px;
+  background-color: white;
+  border-top: 0.5px solid #cdced2;
+}
+
+.nav h1 {
+  color: purple;
+  font-size: 16px;
+  font-family: sans-serif;
+
+}
+
 .map {
-  background-image: url("../image/map.png");
+  background-image: url("../image/streetmap.png");
   background-size: cover;
-}
-.menu {
-  width: 375px;
-  height: 667px;
-  border-radius: 8px;
-  overflow: hidden;
+  min-height: 150px;
+  width: 100%;
+  font-size: 1em;
 }
 
-.item {
-  border: 1px solid;
-  overflow: hidden;
+.tab_bar {
+  height: 52px;
+  background: #fff;
+  height: 52px;
+  border: 0.5px solid #cdced2;
 }
 
-.line {
-  display: block;
-  padding: 16px 20px;
-  background: gray;
-  color: 000000;
-}
-
-
-.line i {
-  margin-right: 10px;
-}
-
-.submenu {
-  background: #ffffff;
-  overflow: hidden;
-  display: block;
-}
-
-.submenu h1 {
+.arrivals {
   float: left;
-  padding: 16px 26px;
-  color: ffffff;
-  font-size: 14px;
-  margin: 4px 0;
+  width: 176.02px;
+  height: 29px;
+
+  background: purple;
+
+
+  text-align: center;
+  border: 1px solid purple;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+
+}
+
+.arrivals h3 {
+  position: absolute;
+width: 83.82px;
+height: 16px;
+left: 233px;
+top: 209px;
+
+font-family: SF Pro Text;
+font-style: normal;
+font-weight: normal;
+font-size: 13px;
+line-height: 16px;
+
+/* identical to box height */
+display: flex;
+
+text-align: center;
+letter-spacing: -0.00615385em;
+
+color: #fff;
+}
+
+.stop {
+  float: left;
+  width: 176.02px;
+  height: 29px;
+  color: purple;
+  padding:10px;
+  text-align: center;
+  border: 1px solid purple;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+
+  box-sizing: border-box;
+}
+
+.stop h3 {
+  position: absolute;
+width: 83.82px;
+height: 16px;
+
+
+font-family: SF Pro Text;
+font-style: normal;
+font-weight: normal;
+font-size: 13px;
+line-height: 16px;
+
+/* identical to box height */
+display: flex;
+align-items: flex-end;
+text-align: center;
+letter-spacing: -0.00615385em;
+
+color: #C274C2;
+
+
+}
+.line {
+  padding: 20px;
+  border-top: 1px solid gray;
   position: relative;
+  display: block;
+}
+
+.line p {
+  position: absolute;
+width: 107px;
+height: 18px;
+left: 18px;
+top: 2px;
+
+font-family: SF Pro Text;
+font-style: normal;
+font-weight: bold;
+font-size: 18px;
+line-height: 21px;
+display: flex;
+align-items: flex-end;
+letter-spacing: -0.016em;
+
+color: #000000;
+}
+
+.Busline {
+  background-color: #333;
+  color: #fff;
+  display: block;
+}
+/
+.Busline ul {
+  padding:0;
+}
+
+.Busline li {
+  display:inline;
 }
 
 
+/*
+.tab_bar {
+  width: 190px;
+  text-align: center;
 
-.submenu  h2 {
+}
+.tab_bar button {
+      border: 1px solid purple;
+      color: white;
+      padding:  10px 0px;
+      float: left;
+      background-color: purple;
+}
+
+.tab_bar button: not(:last-child) {
+  border-right: none;
+}
+
+.tab_bar:after {
+  content:"";
+  clear: both;
+  display: table;
+}
+
+button span.stop {
+    padding: 10px 20px;
+    border: .1px;
+    color: black;
+    background-color: white;
+}
+
+button span.arrivals {
+
+  background-color: purple;
+
+
+}
+
+.Line {
+  width: 375px;
+}
+
+.Line .Busline {
+  background-color: #eee;
+  color: black;
+display: block;
+  padding: 12px;
+  text-decoration: none;
+}
+
+.Line a: hover {
+  background: #ccc;
+}
+
+li {
+  background-color: white;
+
+}
+
+h1 {
   padding: 5px 5px;
-  background: ffffff;
+  font-size: 14px;
+
+
 }
+  */
