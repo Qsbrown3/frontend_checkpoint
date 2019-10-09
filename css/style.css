@@ -1,265 +1,192 @@
-
-
-*:before, *:after {
+* {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
 body {
   background-color: #dadada;
-  font-size: 16px;
-  font-weight: normal;
-  line-height: 1.6em;
-  font-family: SF Pro Text;
-  margin: 0;
-  overflow: scroll;
+  overflow: scroll
+  font-family: SF Pro Text, monospace, sans-serif;
+  font-style: normal;
+
 }
 
-.container {
-  width: 60%;
-
+.phone {
+  width: 400px;
   margin: auto;
-  background: #fff;
 }
 
-a:hover {
-  color: gray;
-}
-
-.clr {
-  clear: both;
-}
-
-.status_bar {
-  background-color: ;
-  margin-bottom: 0.5px solid #cdced2;
+.status {
   height: 20px;
+  margin-bottom: 0.5px solid #cdced2;
+  background-image: url("../image/Base.png");
+  border-bottom: 1px solid #cdced2;
+  background-color: #fff;
 }
 
-.status_bar ul {
-  text-align: center;
-  padding: 0;
-  margin: 0;
-}
-
-.status_bar li {
-  display: inline;
-  padding-left: ;
-
-}
-
-span {
-  text-align: center;
-}
-span.GS {
+.nav-container {
+  display: flex;
+  background-color: #fff;
+  height: 40px;
+  justify-content: flex-start;
+  align-items: center;
 
 }
 
 .nav {
-  width: 330px
-  height: 40px;
-  background-color: white;
-  border-top: 0.5px solid #cdced2;
+  width: 255px;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 5px;
 }
 
-.nav h1 {
-  color: purple;
-  font-size: 16px;
-  font-family: sans-serif;
-
+.nav i {
+  color: #C274C2;
+  height: 21px;
+  width: 13px;
+}
+.current-stop {
+  color: #000;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 21px;
 }
 
 .map {
-  background-image: url("../image/streetmap.png");
+  height: 132px;
+  background-image: url("../image/Mask group.png");
   background-size: cover;
-  min-height: 150px;
-  width: 100%;
-  font-size: 1em;
 }
 
-.tab_bar {
+.tab-bar-container {
   height: 52px;
-  background: #fff;
-  height: 52px;
-  border: 0.5px solid #cdced2;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid #cdced2;
 }
 
-.arrivals {
-  float: left;
-  width: 176.02px;
+.tab {
+  width: 176px;
   height: 29px;
-
-  background: purple;
-
-
-  text-align: center;
-  border: 1px solid purple;
-  border-top-left-radius: 15px;
-  border-bottom-left-radius: 15px;
-
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #C274C2;
+  font-size: 13px;
+  line-height: 16px;
+  letter-spacing: -0.00615385em;
 }
 
-.arrivals h3 {
-  position: absolute;
-width: 83.82px;
-height: 16px;
-left: 233px;
-top: 209px;
-
-font-family: SF Pro Text;
-font-style: normal;
-font-weight: normal;
-font-size: 13px;
-line-height: 16px;
-
-/* identical to box height */
-display: flex;
-
-text-align: center;
-letter-spacing: -0.00615385em;
-
-color: #fff;
+.first-item {
+  background-color: #C274C2;
 }
 
-.stop {
-  float: left;
-  width: 176.02px;
-  height: 29px;
-  color: purple;
-  padding:10px;
-  text-align: center;
-  border: 1px solid purple;
-  border-top-right-radius: 15px;
-  border-bottom-right-radius: 15px;
-
-  box-sizing: border-box;
+.tab-item-1 {
+  color: #FFFFFF;
 }
 
-.stop h3 {
-  position: absolute;
-width: 83.82px;
-height: 16px;
-
-
-font-family: SF Pro Text;
-font-style: normal;
-font-weight: normal;
-font-size: 13px;
-line-height: 16px;
-
-/* identical to box height */
-display: flex;
-align-items: flex-end;
-text-align: center;
-letter-spacing: -0.00615385em;
-
-color: #C274C2;
-
-
+.tab-item-2 {
+  color: #C274C2;
 }
+
 .line {
-  padding: 20px;
-  border-top: 1px solid gray;
-  position: relative;
-  display: block;
+  background-color: #fff;
+  font-family: SF Pro Text;
+  font-size: 18px
+  font-weight: bold;
+  line-height: 21px;
+  letter-spacing: -0.016em;
+  padding-left: 10px;
+  padding-top: 10px;
 }
 
-.line p {
-  position: absolute;
-width: 107px;
-height: 18px;
-left: 18px;
-top: 2px;
-
-font-family: SF Pro Text;
-font-style: normal;
-font-weight: bold;
-font-size: 18px;
-line-height: 21px;
-display: flex;
-align-items: flex-end;
-letter-spacing: -0.016em;
-
-color: #000000;
-}
-
-.Busline {
-  background-color: #333;
-  color: #fff;
-  display: block;
-}
-/
-.Busline ul {
-  padding:0;
-}
-
-.Busline li {
-  display:inline;
-}
-
-
-/*
-.tab_bar {
-  width: 190px;
-  text-align: center;
-
-}
-.tab_bar button {
-      border: 1px solid purple;
-      color: white;
-      padding:  10px 0px;
-      float: left;
-      background-color: purple;
-}
-
-.tab_bar button: not(:last-child) {
-  border-right: none;
-}
-
-.tab_bar:after {
-  content:"";
-  clear: both;
-  display: table;
-}
-
-button span.stop {
-    padding: 10px 20px;
-    border: .1px;
-    color: black;
-    background-color: white;
-}
-
-button span.arrivals {
-
-  background-color: purple;
-
+.bus-info-container {
+  background-color: #fff;
+  padding: 10px;
+  display: flex;
+  justify-content: space-around;
 
 }
 
-.Line {
-  width: 375px;
+.with-border {
+  border-bottom:1px solid #cdced2;
 }
 
-.Line .Busline {
-  background-color: #eee;
-  color: black;
-display: block;
-  padding: 12px;
-  text-decoration: none;
+.bus-menu {
+  display: flex;
+  width: 350px;
+  flex: 1;
 }
 
-.Line a: hover {
-  background: #ccc;
+.bus-number  {
+  width: 53px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-li {
-  background-color: white;
-
+.current-view {
+  margin-top: 10px;
+  height: 25px;
+  background: #C274C2;
+  border: 3px solid #C274C2;
+  border-radius: 9px;
 }
 
-h1 {
-  padding: 5px 5px;
+.line-info {
+  padding-top: 10px;
+  padding-left: 10px;
+  width: 200px
+}
+
+.bus-number,
+.line-info {
+  flex: initial;
+}
+.destination {
+  font-style: normal;
+  font-weight: 600;
   font-size: 14px;
-
-
+  line-height: 17px;
+  letter-spacing: 0.0175em;
+  padding-bottom: 10px;
 }
-  */
+
+.frequency {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.0175em;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.time {
+  display: flex;
+  justify-content: center;
+  width: 100px;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0.0175em;
+  align-items: center;
+}
+
+.current {
+  padding-left: 10px;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  letter-spacing: 0.0175em;
+}
+
+.getting-serviced {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.0175em;
+}
