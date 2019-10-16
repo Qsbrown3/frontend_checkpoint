@@ -44,8 +44,9 @@ body {
 .nav i {
   color: #C274C2;
   height: 21px;
-  width: 13px;
+  width: 15px;
 }
+
 .current-stop {
   color: #000;
   font-weight: 600;
@@ -55,7 +56,7 @@ body {
 
 .map {
   height: 132px;
-  background-image: url("../image/Mask group.png");
+  background-image: url("../image/mapview.png");
   background-size: cover;
 }
 
