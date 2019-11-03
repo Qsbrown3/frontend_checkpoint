@@ -5,16 +5,19 @@
 }
 
 @font-face {
-  font-family: "SF Pro", "Roboto", sans-serif;
+  font-family: system;
   font-style: normal;
   font-weight: 400;
-  src: url(<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
-  rel="stylesheet">);
-     }
+  src: local(".SFNSText-Light"), local(".HelveticaNeueDeskInterface-Light"),
+  local(".LucidaGrandeUI"), local("Ubuntu Light"),
+  local("Segoe UI Light"), local("Roboto-Light"),
+  local("DroidSans"), local("Tahoma");
+}
+
 
 body {
   background-color: #dadada;
-  overflow: scroll
+  overflow: scroll;
   font-family: "system";
   font-style: normal;
 
